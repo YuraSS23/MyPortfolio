@@ -13,25 +13,25 @@ export const Footer = () => {
 
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"instagram"}/>
+                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21 21"} iconId={"instagram"}/>
                         </SocialLink>
                     </SocialItem>
 
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"telegram"}/>
+                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21 21"} iconId={"telegram"}/>
                         </SocialLink>
                     </SocialItem>
 
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"vk"}/>
+                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21 21"} iconId={"vk"}/>
                         </SocialLink>
                     </SocialItem>
 
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"linkedin"}/>
+                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21 21"} iconId={"linkedin"}/>
                         </SocialLink>
                     </SocialItem>
 

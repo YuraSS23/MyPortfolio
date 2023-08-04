@@ -1,11 +1,11 @@
 import {theme} from "./Theme";
 
 type FontPropsType = {
-    family?: string
-    weight?: number
-    color?: string
-    lineHeight?: number
-    Fmin?: number
+    family?: string,
+    weight?: number,
+    color?: string,
+    lineHeight?: number,
+    Fmin?: number,
     Fmax?: number
 }
 

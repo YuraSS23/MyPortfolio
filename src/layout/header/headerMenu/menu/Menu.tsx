@@ -3,7 +3,7 @@ import {S} from "../HeaderMenu_Styles";
 
 const items = [
     {
-        title:  "Home",
+        title: "Home",
         href: "home"
     },
     {
@@ -32,7 +32,10 @@ export const Menu: React.FC = () => {
                     <S.NavLink activeClass="active"
                                to={item.href}
                                smooth={true}
-                               spy={true}>
+                               spy={true}
+                               offset={4.5}
+                    >
+                        offset={4.5}
                         {item.title}
                         <S.Mask>
                             <span>{item.title}</span>

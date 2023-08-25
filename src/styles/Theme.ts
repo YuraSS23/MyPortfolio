@@ -13,5 +13,8 @@ colors: {
         tablet: "screen and (max-width: 768px)",
         mobile: "screen and (max-width: 576px)",
         desktop: "screen and (min-width: 1140px)",
+    },
+    animations: {
+        transition: "0.2s ease-in-out"
     }
 }

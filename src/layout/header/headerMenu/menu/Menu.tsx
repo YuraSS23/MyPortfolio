@@ -35,7 +35,6 @@ export const Menu: React.FC = () => {
                                spy={true}
                                offset={4.5}
                     >
-                        offset={4.5}
                         {item.title}
                         <S.Mask>
                             <span>{item.title}</span>

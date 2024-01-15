@@ -6,18 +6,18 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import socialImg from "../../../assets/images/proj-1.webp";
 import timerImg from "../../../assets/images/proj-2.webp"
+import counterImg from "../../../assets/images/counter.jpg"
 import {Container} from "../../../components/Container";
 import {AnimatePresence, motion} from "framer-motion"
 
-//const tabsItems = ["All", "landing page", "React", "spa"]
 const tabsItems: Array<{ title: string, status: TabStatusType }> = [
     {
         title: "All",
         status: "all"
     },
     {
-        title: "landing page",
-        status: "landing"
+        title: "javascript",
+        status: "javascript"
     },
     {
         title: "React",
@@ -35,42 +35,54 @@ const worksData = [
         title: "Social Network",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         src: socialImg,
-        type: "spa"
+        type: "spa",
+        demo: "https://yurass23.github.io/Social-network/",
+        code: "https://github.com/YuraSS23/Social-network"
     },
     {
         id: 2,
         title: "Timer",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
         src: timerImg,
-        type: "react"
+        type: "javascript",
+        demo: "https://yurass23.github.io/Clock/",
+        code: "https://github.com/YuraSS23/Clock"
     },
     {
         id: 3,
         title: "Social Network",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         src: socialImg,
-        type: "spa"
+        type: "spa",
+        demo: "https://yurass23.github.io/Social-network/",
+        code: "https://github.com/YuraSS23/Social-network"
     },
     {
         id: 4,
         title: "Timer",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
         src: timerImg,
-        type: "react"
+        type: "javascript",
+        demo: "https://yurass23.github.io/Clock/",
+        code: "https://github.com/YuraSS23/Clock"
     },
     {
         id: 5,
-        title: "Social Network",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        src: socialImg,
-        type: "spa"
+        title: "Counter",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+        src: counterImg,
+        type: "react",
+        demo:"https://yurass23.github.io/counter/",
+        code: "https://github.com/YuraSS23/counter"
     },
     {
         id: 6,
-        title: "Timer",
+        title: "Counter",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: timerImg,
-        type: "react"
+        src: counterImg,
+        type: "react",
+        demo:"https://yurass23.github.io/counter/",
+        code: "https://github.com/YuraSS23/counter"
     }
 ]
 
@@ -78,8 +90,8 @@ export const Works: React.FC = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
     let filteredWorks = worksData
 
-    if (currentFilterStatus === "landing") {
-        filteredWorks = worksData.filter(work => work.type === "landing")
+    if (currentFilterStatus === "javascript") {
+        filteredWorks = worksData.filter(work => work.type === "javascript")
     }
     if (currentFilterStatus === "react") {
         filteredWorks = worksData.filter(work => work.type === "react")
@@ -114,6 +126,8 @@ export const Works: React.FC = () => {
                                           key={w.id}
                                           text={w.text}
                                           src={w.src}
+                                          demo={w.demo}
+                                          code={w.code}
                                     />
                                 </motion.div>
                             )

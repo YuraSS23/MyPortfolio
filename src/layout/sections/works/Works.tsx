@@ -52,8 +52,8 @@ const worksData = [
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         src: cssImg,
         type: "css",
-        demo: "https://github.com/YuraSS23/Test-task-Maksim",
-        code: "https://yurass23.github.io/Test-task-Maksim/"
+        demo: "https://yurass23.github.io/Test-task-Maksim/",
+        code: "https://github.com/YuraSS23/Test-task-Maksim"
     },
     {
         id: 3,
@@ -61,8 +61,8 @@ const worksData = [
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
         src: nasaImg,
         type: "react",
-        demo: "https://github.com/YuraSS23/Nasa",
-        code: "https://yurass23.github.io/Nasa/"
+        demo: "https://yurass23.github.io/Nasa/",
+        code: "https://github.com/YuraSS23/Nasa"
     },
     {
         id: 4,

@@ -7,6 +7,9 @@ import {Work} from "./work/Work";
 import socialImg from "../../../assets/images/proj-1.webp";
 import timerImg from "../../../assets/images/proj-2.webp"
 import counterImg from "../../../assets/images/counter.jpg"
+import cssImg from "../../../assets/images/css.jpg"
+import nasaImg from "../../../assets/images/nasa.jpg"
+
 import {Container} from "../../../components/Container";
 import {AnimatePresence, motion} from "framer-motion"
 
@@ -14,6 +17,10 @@ const tabsItems: Array<{ title: string, status: TabStatusType }> = [
     {
         title: "All",
         status: "all"
+    },
+    {
+        title: "Css",
+        status: "css"
     },
     {
         title: "javascript",
@@ -41,24 +48,33 @@ const worksData = [
     },
     {
         id: 2,
-        title: "Timer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: timerImg,
-        type: "javascript",
-        demo: "https://yurass23.github.io/Clock/",
-        code: "https://github.com/YuraSS23/Clock"
+        title: "Test task CSS",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src: cssImg,
+        type: "css",
+        demo: "https://github.com/YuraSS23/Test-task-Maksim",
+        code: "https://yurass23.github.io/Test-task-Maksim/"
     },
     {
         id: 3,
-        title: "Social Network",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        src: socialImg,
-        type: "spa",
-        demo: "https://yurass23.github.io/Social-network/",
-        code: "https://github.com/YuraSS23/Social-network"
+        title: "NASA picture of the day",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+        src: nasaImg,
+        type: "react",
+        demo: "https://github.com/YuraSS23/Nasa",
+        code: "https://yurass23.github.io/Nasa/"
     },
     {
         id: 4,
+        title: "Counter",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+        src: counterImg,
+        type: "react",
+        demo:"https://yurass23.github.io/counter/",
+        code: "https://github.com/YuraSS23/counter"
+    },
+    {
+        id: 5,
         title: "Timer",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
         src: timerImg,
@@ -66,24 +82,6 @@ const worksData = [
         demo: "https://yurass23.github.io/Clock/",
         code: "https://github.com/YuraSS23/Clock"
     },
-    {
-        id: 5,
-        title: "Counter",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: counterImg,
-        type: "react",
-        demo:"https://yurass23.github.io/counter/",
-        code: "https://github.com/YuraSS23/counter"
-    },
-    {
-        id: 6,
-        title: "Counter",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        src: counterImg,
-        type: "react",
-        demo:"https://yurass23.github.io/counter/",
-        code: "https://github.com/YuraSS23/counter"
-    }
 ]
 
 export const Works: React.FC = () => {
@@ -98,6 +96,9 @@ export const Works: React.FC = () => {
     }
     if (currentFilterStatus === "spa") {
         filteredWorks = worksData.filter(work => work.type === "spa")
+    }
+    if (currentFilterStatus === "css") {
+        filteredWorks = worksData.filter(work => work.type === "css")
     }
 
     function changeFilterStatus(value: TabStatusType) {

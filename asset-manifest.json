@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.7d332b9d.css",
-    "main.js": "/MyPortfolio/static/js/main.2c53e87c.js",
+    "main.js": "/MyPortfolio/static/js/main.d9e93126.js",
     "static/js/787.25eaef86.chunk.js": "/MyPortfolio/static/js/787.25eaef86.chunk.js",
+    "static/media/css.jpg": "/MyPortfolio/static/media/css.bbd7576753ddd87b03d1.jpg",
+    "static/media/nasa.jpg": "/MyPortfolio/static/media/nasa.83a1e53432054a1c58c0.jpg",
     "static/media/photo.webp": "/MyPortfolio/static/media/photo.1cbf2991a34086c08099.webp",
+    "static/media/shop.jpg": "/MyPortfolio/static/media/shop.a1e8244f9364a2004397.jpg",
+    "static/media/form.jpg": "/MyPortfolio/static/media/form.899a912ba9cc007f2897.jpg",
     "static/media/counter.jpg": "/MyPortfolio/static/media/counter.40865c678fd4b037fc76.jpg",
     "static/media/proj-1.webp": "/MyPortfolio/static/media/proj-1.f4264469c0e20ce5f20d.webp",
     "static/media/proj-2.webp": "/MyPortfolio/static/media/proj-2.e294a9180f3031d1b313.webp",
     "static/media/icons-sprite.svg": "/MyPortfolio/static/media/icons-sprite.b1334914dba133235cf3ae6bd00be3a4.svg",
     "index.html": "/MyPortfolio/index.html",
     "main.7d332b9d.css.map": "/MyPortfolio/static/css/main.7d332b9d.css.map",
-    "main.2c53e87c.js.map": "/MyPortfolio/static/js/main.2c53e87c.js.map",
+    "main.d9e93126.js.map": "/MyPortfolio/static/js/main.d9e93126.js.map",
     "787.25eaef86.chunk.js.map": "/MyPortfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d332b9d.css",
-    "static/js/main.2c53e87c.js"
+    "static/js/main.d9e93126.js"
   ]
 }

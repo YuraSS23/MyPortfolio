@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Link} from "../../../../components/Link";
 
-export type TabStatusType = "all" | "css" | "javascript" | "react" | "spa"
+export type TabStatusType = "all" | "css" | "javascript" | "react" | "spa" | "angular"
 
 type TabMenuPropsType = {
     tabsItems: Array<{title: string, status: TabStatusType}>

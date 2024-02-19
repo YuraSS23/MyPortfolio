@@ -9,6 +9,8 @@ import timerImg from "../../../assets/images/proj-2.webp"
 import counterImg from "../../../assets/images/counter.jpg"
 import cssImg from "../../../assets/images/css.jpg"
 import nasaImg from "../../../assets/images/nasa.jpg"
+import shopImg from "../../../assets/images/shop.jpg"
+import formImg from "../../../assets/images/form.jpg"
 
 import {Container} from "../../../components/Container";
 import {AnimatePresence, motion} from "framer-motion"
@@ -33,6 +35,10 @@ const tabsItems: Array<{ title: string, status: TabStatusType }> = [
     {
         title: "spa",
         status: "spa"
+    },
+    {
+        title: "angular",
+        status: "angular"
     }
 ]
 
@@ -82,6 +88,24 @@ const worksData = [
         demo: "https://yurass23.github.io/Clock/",
         code: "https://github.com/YuraSS23/Clock"
     },
+    {
+        id: 6,
+        title: "Shop",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+        src: shopImg,
+        type: "angular",
+        demo: "https://shop-d4153.web.app/",
+        code: "https://github.com/YuraSS23/Angular-project"
+    },
+    {
+        id: 7,
+        title: "Form with validate",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+        src: formImg,
+        type: "javascript",
+        demo: "https://yurass23.github.io/Form-with-validate/",
+        code: "https://github.com/YuraSS23/Form-with-validate"
+    },
 ]
 
 export const Works: React.FC = () => {
@@ -99,6 +123,9 @@ export const Works: React.FC = () => {
     }
     if (currentFilterStatus === "css") {
         filteredWorks = worksData.filter(work => work.type === "css")
+    }
+    if (currentFilterStatus === "angular") {
+        filteredWorks = worksData.filter(work => work.type === "angular")
     }
 
     function changeFilterStatus(value: TabStatusType) {
